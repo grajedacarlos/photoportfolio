@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+/* header */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1{
+    max-width: 30%;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* main section */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homepageText{
+    text-align: center;
+    font-size: .75em;
+}
+
+#homepagePhotoWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#homepagePhoto{
+    height: 50vh;
+    border: 7px solid black;
+}
+
+#buttonWrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* media query- portait orientation */
+@media (orientation:portrait) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 25%;
+        width: 100%;
+    }
+   h1{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+   } 
+
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #homepagePhoto{
+        height: 40vh;
+        border: 7px solid black;
+    }
+}
+
+/* Portfolio */
+
+#photoGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  #galleryPhoto {
+    max-width: 420px;
+    max-height: 420px;
+    min-width: 200px;
+    min-height:200px;
+  }
+
+
+  /* Contact */
+div{
+    padding: 5px;
+}
